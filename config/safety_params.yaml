@@ -1,0 +1,14 @@
+fdir_node:
+  ros__parameters:
+    check_rate_hz: 5.0
+    fault_limit: 3                  # ardışık kaçırma → kalıcı hata
+    # Batarya (8S LiFePO4 25.6V nominal). KTR'deki 10.5V değeri 8S için hatalıydı.
+    battery_warn_v: 22.0
+    battery_critical_v: 20.0
+    # Kaynak sessizlik toleransları (s)
+    timeout_mavros: 1.5
+    timeout_camera: 2.0
+    timeout_lidar: 2.0
+    timeout_perception: 5.0
+    timeout_mission: 2.0
+    timeout_imu: 1.5
